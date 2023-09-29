@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Hangman Game</title>
 </head>
 <body>
-    <div class="container">
-
-    </div>
+    <h1>Word Guess</h1>
     <div class="button">
-        
-        
+        <button id="start">START GAME</button>
     </div>
-    <div class="box">
-        <div class="box" data-number="H" data-state="hidden"></div>
-        <div class="box" data-number="A" data-state="hidden"></div>
-        <div class="box" data-number="N" data-state="hidden"></div>
-        <div class="box" data-number="G" data-state="hidden"></div>
-        <div class="box" data-number="M" data-state="hidden"></div>
-        <div class="box" data-number="A" data-state="hidden"></div>
-        <div class="box" data-number="N" data-state="hidden"></div>
+    <div class="container">
+        <label for="input">Pick a letter</label>
+        <input name="input" id="input" placeholder=" pick a charater"/> 
+        <div>
+            <div class="box" data-number="H" data-state="hidden"></div>
+            <div class="box" data-number="A" data-state="hidden"></div>
+            <div class="box" data-number="N" data-state="hidden"></div>
+            <div class="box" data-number="G" data-state="hidden"></div>
+            <div class="box" data-number="M" data-state="hidden"></div>
+            <div class="box" data-number="A" data-state="hidden"></div>
+            <div class="box" data-number="N" data-state="hidden"></div>
         </div>
+    </div>
+    
+    <div class="stats">
+        <form>
+            <div>
+                <h2>Scoreboard:</h2></2>
+                <p><strong>Wins:</strong> <span id="wins"></span></p>
+                <p><strong>Losses:</strong> <span id="losses"></span></p>
+            </div>
+        </form>
+    </div>
+        <script src="./script.js"></script>
 </body>
 </html>
