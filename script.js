@@ -40,5 +40,35 @@ function: endgame
 when game ends when all key imputs are true, or time = 0
 display scores
 
+*/
 
+var keyPress =""
+var timeLeft = document.querySelector("html.timeLeft");
+var wins = document.querySelector("html.wins");
+var losses = document.querySelector("html.losses");
+var answerInput = document.querySelector("answerInput");
+var button = document.querySelector("html.button");
+
+button.addEventListener("click", function(event) {
+
+});
+
+addEventListener("keyup", function(event){
+    if(keyupAction === true){
+        // reveal correct letter
+        timeLeft++
+    }
+    else{
+        timeLeft--
+    }
+})
+
+function endGame(){
+    if(timeLeft.value === 0){
+        losses++
+    }
+    else{
+        wins++
+    }
+};
 
