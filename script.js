@@ -39,8 +39,9 @@ add increment win or loss
 function: endgame
 when game ends when all key imputs are true, or time = 0
 display scores
-
+------------------------------------------------------------------------------
 */
+
 
 var keyPress =""
 var timeLeft = document.querySelector("html.timeLeft");
@@ -49,9 +50,9 @@ var losses = document.querySelector("html.losses");
 var answerInput = document.querySelector("answerInput");
 var button = document.querySelector("html.button");
 
-button.addEventListener("click", function(event) {
+//button.addEventListener("click", function(event) {
 
-});
+//});
 
 addEventListener("keyup", function(event){
     if(keyupAction === true){
@@ -72,3 +73,45 @@ function endGame(){
     }
 };
 
+
+//------------------------------------------------
+
+
+/*
+
+*************AZ added code
+
+function keyupAction(event1) {
+    console.log(event1);
+    var keyPress = event1.key;
+    var keyCode = event1.code;
+    //document.querySelector(".box").textContent = keyPress;
+    document.querySelector(".box").textContent = keyCode;
+}
+
+document.addEventListener("onKeyup", keyupAction);
+/*---- FYI if you comment out the code below the boxes will display-------------------------------------
+
+    var container = document.querySelector(".boxcontainer");
+
+    container.addEventListener("keyupAction", function(event) { 
+    var element = event.target;
+
+//container.addEventListener("#key-events", "".testContent = keyPress);
+ 
+    if (element.matches(".box")) {
+
+    var state = element.getAttributre("data-state");
+
+        if (state === "hidden") {
+            element.textContent = element/getAttributre("data-number");
+            element.setattribute ( "data-state", "hidden");
+
+        }else {
+            element.textContent = element.getAttributre("data-number");
+            element.setattribute("data-state", "hidden");
+        }
+    }
+})  
+
+   
