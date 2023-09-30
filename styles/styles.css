@@ -5,22 +5,35 @@ body {
 }
 
 .container {
-    display:block;
+    position: relative;
+    justify-content: center;
+    /* display: flex;
+    flex-wrap: wrap; */
     height: 300px;
-    width: 100px;
+    width: 100%;
+    background-color: red;
+    margin: 25px;
 
 }
 
+.boxcontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .box {
-    display:flex;
-    flex-direction:column;
-    height: 50px;
-    width: 50px;
-    margin: 5px;
+   
+    justify-content: space-evenly;
+    height: 150px;
+    width: 150px;
+    margin: 15px;
     background-color: blue;
     text-align: center;
     font-size: 25px;
     color: white;
+    z-index: 1;
 }
 
 
